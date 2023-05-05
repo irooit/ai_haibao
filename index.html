@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="referrer" content="unsafe-url">
+    <title>.....</title>
+    <script>(function () {
+        var initFontSize = 20
+        var iPhone6Width = 375
+        var clientWidth = window.document.documentElement.clientWidth || iPhone6Width
+        var newFontSize = initFontSize * (clientWidth / iPhone6Width)
+        document.documentElement.style.fontSize = newFontSize + 'px'
+    })()
+    window.HELP_IMPROVE_VIDEOJS = false;</script>
+    <style>body {
+        background-color: #ededed
+    }
+
+    * {
+        margin: 0;
+        padding: 0
+    }
+
+    .l_content {
+        width: 100vw;
+        height: 100vh;
+        background: #fff
+    }
+
+    #loading {
+        position: absolute;
+        width: 40vw;
+        margin-left: 50vw;
+        margin-top: 40vh;
+        transform: translate(-50%, -50%);
+    }
+
+    .fill-none {
+        display: none;
+    }</style>
+    <link href="https://1899.oss-cn-shenzhen.aliyuncs.com/case/css/dice.87592a83.css" rel="prefetch">
+    <link href="https://1899.oss-cn-shenzhen.aliyuncs.com/case/css/diceShare.01898903.css" rel="prefetch">
+    <link href="https://1899.oss-cn-shenzhen.aliyuncs.com/case/css/npm.vant.22a4caeb.css" rel="prefetch">
+    <link href="https://1899.oss-cn-shenzhen.aliyuncs.com/case/css/tixian.82729f6c.css" rel="prefetch">
+    <link href="https://1899.oss-cn-shenzhen.aliyuncs.com/case/css/tixianQun.8b22de0c.css" rel="prefetch">
+    <link href="https://1899.oss-cn-shenzhen.aliyuncs.com/case/css/videoList.8d79c6f8.css" rel="prefetch">
+    <link href="js/backList.27879a08.js" rel="prefetch">
+    <link href="js/dice.77ca4128.js" rel="prefetch">
+    <link href="js/diceShare.d22e428c.js" rel="prefetch">
+    <link href="js/npm.vant.e206c6b5.js" rel="prefetch">
+    <link href="js/tixian.a548fa17.js" rel="prefetch">
+    <link href="js/tixianQun.a50e05e5.js" rel="prefetch">
+    <link href="js/videoList.7605f3a4.js" rel="prefetch">
+    <link href="https://1899.oss-cn-shenzhen.aliyuncs.com/case/css/app.2ff291b8.css" rel="preload" as="style">
+    <link href="js/app.dfda102c.js" rel="preload" as="script">
+    <link href="js/npm.qrcode.438397a5.js" rel="preload" as="script">
+    <link href="js/npm.vue.0820ff57.js" rel="preload" as="script">
+    <link href="js/runtime.5d69d4cf.js" rel="preload" as="script">
+    <link href="js/vendors_app.b2fc0fa5.js" rel="preload" as="script">
+    <link href="https://1899.oss-cn-shenzhen.aliyuncs.com/case/css/app.2ff291b8.css" rel="stylesheet">
+</head>
+<body>
+<div id="app">
+    <div class="l_content"><img id="loading" src="https://1899.oss-cn-shenzhen.aliyuncs.com/case/loading2.svg"></div>
+</div>
+<script src="js/runtime.5d69d4cf.js"></script>
+<script src="js/npm.qrcode.438397a5.js"></script>
+<script src="js/npm.vue.0820ff57.js"></script>
+<script src="js/vendors_app.b2fc0fa5.js"></script>
+<script src="js/app.dfda102c.js"></script>
+<script>function record(event, id, cb) {
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", '//39jx.cn/record', true);
+    xhr.setRequestHeader('content-type', 'application/json');
+
+    xhr.send(JSON.stringify({
+        event,
+        id
+    }));
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState && xhr.readyState === 4) {
+            cb && cb()
+        }
+    }
+}
+
+record('render_index', 1)</script>
+</body>
+</html>
